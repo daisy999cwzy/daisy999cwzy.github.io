@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">八字与紫微斗数测算</view>
+  <view class="button-group">
+    <button bindtap="navigateToBazi" class="btn">八字测算</button>
+    <button bindtap="navigateToZiwei" class="btn">紫微斗数测算</button>
+  </view>
+</view>

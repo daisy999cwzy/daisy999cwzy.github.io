@@ -1,0 +1,4 @@
+<view class="container">
+  <text class="title">欢迎使用命理测试小程序</text>
+  <!-- 这里可以添加更多的页面元素 -->
+</view>

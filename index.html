@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吕南星Nancy - 个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo/DALL·E 2024-10-06 00.08.30 - A minimalist and fresh personal logo design featuring a simple tree growing upwards, symbolizing growth and energy. The tree has a clean, natural aest(1).png" alt="吕南星Nancy的Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#resume">简历</a></li>
+                <li><a href="#portfolio">AIGC作品集</a></li>
+                <li><a href="#reports">研究报告</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>暗色模式</em>
+        </div>
+        <div class="language-switch">
+            <select id="language-select">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1 data-i18n="home.name">吕南星Nancy</h1>
+                <p data-i18n="home.slogan">风物长宜放眼量</p>
+                <div class="cta-buttons">
+                    <a href="#resume" class="cta-button"><i class="fas fa-user"></i> <span data-i18n="resume.title">简历</span></a>
+                    <a href="#portfolio" class="cta-button"><i class="fas fa-palette"></i> <span data-i18n="portfolio.title">作品集</span></a>
+                    <a href="#reports" class="cta-button"><i class="fas fa-file-powerpoint"></i> <span data-i18n="reports.title">研究报告</span></a>
+                </div>
+            </div>
+            <a href="#resume" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <section id="resume">
+            <h2 data-i18n="resume.title">简历</h2>
+            <p>查看我的详细简历：</p>
+            <div class="resume-container">
+                <object data="cv/IP求职.pdf" type="application/pdf" width="100%" height="600px">
+                    <p>您的浏览器不支持嵌入式PDF。您可以 <a href="cv/IP求职.pdf">下载PDF</a> 来查看它。</p>
+                </object>
+            </div>
+            <a href="cv/IP求职.pdf" target="_blank" class="download-button">下载简历 PDF</a>
+        </section>
+
+        <section id="portfolio">
+            <h2 data-i18n="portfolio.title">AIGC作品集</h2>
+            <div class="portfolio-grid">
+                <!-- 所有作品项将通过 JavaScript 动态添加 -->
+            </div>
+        </section>
+
+        <section id="reports" class="reports-section">
+            <h2>研究报告</h2>
+            <ul>
+                <li>
+                    <a href="PPT/诡秘之主IP.pdf" target="_blank">
+                        <img src="PPT/缩略图_1.png" alt="诡秘之主IP研究报告预览" class="report-thumbnail">
+                        诡秘之主IP研究报告
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contact.title">联系我</h2>
+            <form id="contact-form" action="https://formspree.io/f/your_formspree_endpoint" method="POST">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="text" name="company" placeholder="您的公司" required>
+                <input type="text" name="contact" placeholder="您的联系方式（电话/邮箱）" required>
+                <textarea name="message" placeholder="您的留言" required></textarea>
+                <button type="submit" data-i18n="contact.submit">发送</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p>联系方式：daisy999cwzy@163.com</p>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div id="visitor-count">访问量：<span id="count">0</span></div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.6.10/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
